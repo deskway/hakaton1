@@ -1,0 +1,16 @@
+games = {
+    'CS 2': 'Це багатокористувацька гра в жанрі тактичного шутера від першої особи, розроблена компанією Valve. Є 5-ю грою в серії Counter-Strike. Valve анонсувала гру 22 березня 2023 року, оголосивши, що вона вийде влітку 2023 року.',
+    'DOTA 2': 'Це багатокористувацька відеогра в піджанрі MOBA, автономне продовження ідей карти DotA для гри Warcraft III: Reign of Chaos і її модифікації Warcraft III: The Frozen Throne. Dota 2 випущена компанією Valve Corporation',
+    'Valorant': 'Це безкоштовний інтелектуальний шутер від першої особи, розроблений компанією Riot Games для Microsoft Windows. Вперше представлений під кодовою назвою Project A',
+}
+name = input('Назва гри:')
+if name in games:
+    print('Що це за гра?',games[name])
+else:
+    answer = input('На жаль, гра не знайдена(. Додати?')
+    if answer == 'так':
+        what = input('Пояснення гри:')
+        games[name] = what
+        print(games)
+    else:
+        print('Відповідь отримано')
